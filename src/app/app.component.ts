@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hit';
+
+  child:any="sending data parent to child";
+
+  myfun(val:any){
+    this.child=val;
+  }
+
+counter=0;
+  updatecounter(){
+ this.counter+=1;
+  }
 }
